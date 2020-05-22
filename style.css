@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Oswald&family=Raleway&display=swap');
+
+/* -------  Structure ------- */
+header {
+  padding-left: 24px;
+  font-family: 'Dosis', sans-serif;
+}
+
+main {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  background-color: hsl(177, 18%, 67%);
+  text-align: center;
+  height: 50px;
+  margin:auto;
+  padding-bottom: 20px;
+  border-radius: 18px;
+}
+
+/* -------- Images -------- */
+img { 
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  padding-top: 6px;
+}
+
+/* -------  Header ------- */
+header h1 {
+	margin: 0px;
+  padding-top: 24px;
+  font-size: 62px; 
+}
+
+header h2 {
+	margin: 6px;
+  padding-top: 6px; 
+  font-size: 22px;
+}
+
+/* ------- Main -------- */
+main h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+}
+
+main div {
+  width: 600px;
+  margin: auto;
+}
+
+/* -------  href ------- */
+
+a {
+  text-decoration: none;	
+}
+
+a:link { color:hsl(207, 19%, 40%); }
+a:visited { color:hsl(194, 78%, 21%); }
+a:hover { color:hsl(151, 31%, 69%); }
+a:active { color: hsl(151, 31%, 69%); }
+
+
+a:hover {
+	text-decoration: underline;	
+}
+
+/* -------  Spacers ------- */ 
+.gap-sm {
+    height: 20px;
+    width: auto;
+}
+
+.gap-lg {
+    height: 150px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
