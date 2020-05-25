@@ -47,7 +47,12 @@ main h2 {
   font-size: 32px;
 }
 
-main div {
+main h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+}
+
+.structure {
   width: 600px;
   margin: auto;
 }
