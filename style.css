@@ -2,8 +2,12 @@
 
 /* -------  Structure ------- */
 header {
-  padding-left: 24px;
   font-family: 'Dosis', sans-serif;
+  margin-bottom: 40px;
+  background-color: hsl(177, 18%, 67%);
+  border-radius: 18px;
+  display: block;
+  
 }
 
 main {
@@ -25,21 +29,17 @@ img {
   width: 100%;
   height: auto;
   border-radius: 18px;
-  padding-top: 6px;
+  /*padding-top: 6px;*/
 }
 
 /* -------  Header ------- */
 header h1 {
 	margin: 0px;
-  padding-top: 24px;
   font-size: 62px; 
+  text-align: center;
+  padding: 20px 0;
 }
 
-header h2 {
-	margin: 6px;
-  padding-top: 6px; 
-  font-size: 22px;
-}
 
 /* ------- Main -------- */
 main h2 {
@@ -51,11 +51,11 @@ main h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 28px;
 }
-
-.structure {
-  width: 600px;
-  margin: auto;
+main  .wrapper  h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
 }
+
 
 /* -------  href ------- */
 
@@ -79,12 +79,39 @@ a:hover {
     width: auto;
 }
 
-.gap-lg {
-    height: 150px;
-    width: auto;
-}
-
 .gap-footer {
     height: 10px;
     width: auto;
+}
+
+/* -------  Flexbox ------- */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
