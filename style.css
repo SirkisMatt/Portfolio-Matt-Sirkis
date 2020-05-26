@@ -2,8 +2,11 @@
 
 /* -------  Structure ------- */
 header {
-  padding-left: 24px;
   font-family: 'Dosis', sans-serif;
+  margin-bottom: 40px;
+  background-color: hsl(177, 18%, 67%);
+  border-radius: 18px;
+  display: block; 
 }
 
 main {
@@ -25,21 +28,61 @@ img {
   width: 100%;
   height: auto;
   border-radius: 18px;
-  padding-top: 6px;
+  /*padding-top: 6px;*/
 }
 
 /* -------  Header ------- */
 header h1 {
 	margin: 0px;
-  padding-top: 24px;
   font-size: 62px; 
+  text-align: center;
+  padding: 10px 0;
 }
 
-header h2 {
-	margin: 6px;
-  padding-top: 6px; 
-  font-size: 22px;
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: hsl(194, 78%, 21%);
+}
+
+/* -------  Flexbox header ------- */
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 14px 0 14px 14px;
+    padding-top: 0;
+    font-size: 52px;
+  }
+  
+  header nav {
+    margin-top: 20px;
+  }
+}
+
 
 /* ------- Main -------- */
 main h2 {
@@ -51,11 +94,12 @@ main h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 28px;
 }
-
-.structure {
-  width: 600px;
-  margin: auto;
+main  .wrapper  h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
 }
+
+
 
 /* -------  href ------- */
 
@@ -79,12 +123,57 @@ a:hover {
     width: auto;
 }
 
-.gap-lg {
-    height: 150px;
-    width: auto;
-}
-
 .gap-footer {
     height: 10px;
     width: auto;
+}
+
+/* -------  Flexbox ------- */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
