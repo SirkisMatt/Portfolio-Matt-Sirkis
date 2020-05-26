@@ -13,12 +13,20 @@
   <!-- Heading -->
 <header>
     <h1>Matt Sirkis</h1>
+    <nav>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
   <!-- Main -->
 <main> 
     
 <div class="wrapper">  
-    <article>
+    <article id="home">
         <div class="group">
         <div class="item">
                 <img src="images/linkedin-pic.jpg" alt="Matt Sirkis at a table">
@@ -29,9 +37,8 @@
                 <p>As a former environmental educator I have gained a deep appreciation for the human impacts on our planets natural systems.
                     I am moving into the role of a software engineer so that I can help bring tech into the fight against human and environmental injustices.
                 </p>
-                <p>I believe conservation technology should be accessible to not only researchers but to everyone that is interested in discovering the nuances of Earths biosphere. 
+                <p>I believe conservation technology should be accessible to not only researchers but to everyone that is interested in discovering the nuances of Earth's biosphere. 
                 </p>
-                <!--<p>Thank you for taking a look at my website! Feel free to <a href="#contact">contact me!</a></p>-->
             </div>
         </div> 
     </article>
@@ -39,7 +46,7 @@
     <div class="gap-sm"></div>  
     <hr>
     <div class="gap-sm"></div>
-        <article>
+        <article id="about">
             <div class="group">
                 <div class="item">
                     <h2>Fireside Chat</h2>
@@ -56,45 +63,56 @@
         
         <article id="portfolio">
             <h2>Portfolio</h2>
-                  <div class='group'>
-                      <div class='item'>
+                  <div class="group">
+                      <div class="item">
                 <img src="images/placeholder.png" alt="Quiz App Screenshot">
                 <h3>Quiz App</h3>
-                          <p>This is a description of the Quiz App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+                          <p>This is a description of the Quiz App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it. Here is a link to the <a href="https://github.com/SirkisMatt" target="blank">GitHub repo</a> and a link to the <a href="https://github.com/SirkisMatt" target="blank">app!</a></p>
                       </div>
-                      <div class='item'>
+                      <div class="item">
                 <img src="images/placeholder.png" alt="Bookmark App Screenshot">
                 <h3>Bookmark App</h3>
-                          <p>This is a description of the Bookmark App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+                          <p>This is a description of the Bookmark App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it. Here is a link to the <a href="https://github.com/SirkisMatt" target="blank">GitHub repo</a> and a link to the <a href="https://github.com/SirkisMatt" target="blank">app!</a></p>
                       </div>
                   </div>
-            <div class='group'>
-                      <div class='item'>
+            <div class="group">
+                      <div class="item">
                 <img src="images/placeholder.png" alt="Pet App Screenshot">
                 <h3>Pet Appointment App</h3>
-                          <p>This is a description of the Pet Appointment App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+                          <p>This is a description of the Pet Appointment App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it. Here is a link to the <a href="https://github.com/SirkisMatt" target="blank">GitHub repo</a> and a link to the <a href="https://github.com/SirkisMatt" target="blank">app!</a></p>
                       </div>
-                      <div class='item'>
+                      <div class="item">
                 <img src="images/placeholder.png" alt="Team Project Screenshot">
                 <h3>Team Project App</h3>
-                          <p>This is a description of the Team Project App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+                          <p>This is a description of the Team Project App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it. Here is a link to the <a href="https://github.com/SirkisMatt" target="blank">GitHub repo</a> and a link to the <a href="https://github.com/SirkisMatt" target="blank">app!</a></p>
                       </div>
                   </div>
             </article>
     <div class="gap-sm"></div>  
     <hr>
     <div class="gap-sm"></div>
-            <article>
+            <article id="contact">
+                    
                 <div class="group">
                     <div class="item">
-                        <h3 id="contact">Contact Me</h3>
-                        <p>I would love to hear from you! Reach out or follow me:</p>
-                        <ol>
-                            <li>
-                            <a href="https://www.linkedin.com/in/matt-sirkis-5a712a176/" target="blank">LinkedIn</a></li>
-                            <li>
-                            <a href="https://github.com/SirkisMatt" target="blank">GitHub</a></li>
-                        </ol>
+                        <h3>Contact Me</h3> 
+                        <form action="https://formspree.io/sirkis.matt@gmail.com" method="post">
+                            <label for="user-name">Name:</label>
+                            <input id="user-name" type="text" name="name">
+                      
+                            <label for="user-email">Email:</label>
+                            <input id="user-email" type="text" name="email"> 
+                      
+                            <label for="user-message">Message:</label>
+                            <textarea id="user-message" name="message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="item">
+                        <h3>Other Ways To Get In Touch</h3>
+                        <p>Email: sirkis.matt@gmail.com</p>
+                        <p id="right"><a href="https://www.linkedin.com/in/matt-sirkis-5a712a176/" target="blank">LinkedIn</a></p>
+                        <p id="right"><a href="https://github.com/SirkisMatt" target="blank">GitHub</a></p>
                     </div>
                 </div>
             </article>
