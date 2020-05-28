@@ -43,6 +43,8 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 header nav ul {
@@ -56,13 +58,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: black;
+  color: rgb(2, 34, 26);
   text-decoration: none;
   padding: 0 20px 0 0;
 }
 
 header nav ul li a:hover {
-  color: hsl(194, 78%, 21%);
+  color: hsl(194, 68%, 14%);
 }
 
 /* -------  Flexbox header ------- */
@@ -94,7 +96,12 @@ main h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 28px;
 }
-main  .wrapper  h2 {
+
+main ul {
+  list-style-type: circle;
+}
+
+main  .wrapper  h2 h3 {
   padding-left: 10px;
   margin-bottom: 0;
 }
@@ -108,7 +115,7 @@ a {
 }
 
 a:link { color:hsl(207, 19%, 40%); }
-a:visited { color:hsl(194, 78%, 21%); }
+main a:visited { color:hsl(194, 78%, 21%); }
 a:hover { color:hsl(151, 31%, 69%); }
 a:active { color: hsl(151, 31%, 69%); }
 
