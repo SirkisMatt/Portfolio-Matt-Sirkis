@@ -67,6 +67,10 @@ header nav ul li a:hover {
   color: hsl(194, 68%, 14%);
 }
 
+header nav ul li a:visited {
+  color: currentColor;
+}
+
 /* -------  Flexbox header ------- */
 @media all and (min-width: 700px) {
   header {
@@ -114,7 +118,7 @@ a {
   text-decoration: none;	
 }
 
-a:link { color:hsl(207, 19%, 40%); }
+main a:link { color:hsl(207, 19%, 40%); }
 main a:visited { color:hsl(194, 78%, 21%); }
 a:hover { color:hsl(151, 31%, 69%); }
 a:active { color: hsl(151, 31%, 69%); }
