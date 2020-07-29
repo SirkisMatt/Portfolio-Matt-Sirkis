@@ -98,16 +98,22 @@ main h2 {
 
 main h3 {
   font-family: 'Oswald', sans-serif;
-  font-size: 28px;
+  font-size: 1.8em;
 }
 
 main ul {
   list-style-type: circle;
+  font-size: 1.3em;
 }
 
 main  .wrapper  h2 h3 {
   padding-left: 10px;
   margin-bottom: 0;
+}
+
+
+main p {
+  font-size: 1.3em;
 }
 
 
@@ -169,6 +175,11 @@ a:hover {
   .group {
     flex-direction: row;
   }
+}
+
+header nav {
+  
+  font-size: 1.8em;
 }
 
 form {
